@@ -78,6 +78,20 @@ class StudentManager
             }
         }
         Console.WriteLine("Student not found");
+    }
+
+    public void RemoveStudentById(int id)
+    {
+    Student? student = students.Find(s => s.Id == id);
+
+    if (student == null)
+    {
+        Console.WriteLine("Student not found");
+        return;
+    }
+
+    students.Remove(student);
+    Console.WriteLine("Student removed successfully");
     }   
 
 

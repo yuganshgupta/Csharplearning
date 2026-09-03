@@ -23,5 +23,16 @@ class Program
 
         manage.ShowStudents();
 
+        Console.WriteLine("All Students:");
+        manage.ShowStudents();
+
+        Console.WriteLine("\nSearching student:");
+        manage.FindStudentById(11);
+
+        Console.WriteLine("\nRemoving student:");
+        manage.RemoveStudentById(11);
+
+        Console.WriteLine("\nStudents after removal:");
+        manage.ShowStudents();
     }
 }
