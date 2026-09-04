@@ -24,7 +24,7 @@ class Program
 
         mgm.ShowExpenses();
         mgm.ShowTotalExpense();
-    
+        
     
     }
 }
