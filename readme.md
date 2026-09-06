@@ -78,3 +78,17 @@ Things implemented so far:
 - Remove contacts using keys
 
 I will keep adding programs and updating these projects as I learn more C# and .NET.
+
+
+### Username Registry
+
+Small console project for practicing `HashSet<T>`.
+
+Things implemented so far:
+
+- Store unique usernames using `HashSet<string>`
+- Add usernames
+- Prevent duplicate usernames
+- Search usernames using `Contains()`
+- Remove usernames using `Remove()`
+- Display all stored usernames
