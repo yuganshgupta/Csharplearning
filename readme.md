@@ -92,3 +92,18 @@ Things implemented so far:
 - Search usernames using `Contains()`
 - Remove usernames using `Remove()`
 - Display all stored usernames
+
+
+### Generic Inventory
+
+Small console project made while learning Generics and `IEnumerable<T>`.
+
+Things implemented so far:
+
+* Created a generic `Inventory<T>` class
+* Stored items internally using `List<T>`
+* Added items of different generic types
+* Used `IEnumerable<T>` so the custom inventory can be iterated
+* Used `GetEnumerator()` with the internal list
+* Used `foreach` directly on the custom `Inventory<Product>`
+
