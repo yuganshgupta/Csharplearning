@@ -37,6 +37,12 @@ This repo contains the C# programs and small projects I am making while learning
 * Exception logging and stack traces
 * JSON serialization and deserialization using Newtonsoft.Json
 * Basic JSON file reading and writing
+* Delegates and method references
+* Passing delegates as parameters
+* Reassigning a delegate to different methods
+* Multicast delegates
+* Adding and removing methods using `+=` and `-=`
+* Nullable delegates and `?.Invoke()`
 
 ## Practice Programs
 
@@ -167,5 +173,22 @@ Things implemented so far:
 * Used `Path.Combine()` to create file paths
 * Used `File.WriteAllText()` to save JSON data
 * Used `File.ReadAllText()` to read JSON data back from a file
+
+### Delegate Order Demo
+
+Console project made while learning delegates and multicast delegates.
+
+Things implemented so far:
+
+* Created a `DiscountHandler` delegate for discount methods
+* Created `NoDiscount`, `StudentDiscount` and `FestivalDiscount` methods
+* Passed a delegate into `CalculateFinalPrice()` and invoked it there
+* Reassigned the same delegate to different discount methods
+* Created an `OrderHandler` delegate for order notifications
+* Used a multicast delegate to run multiple notification methods from one call
+* Added methods to the invocation list using `+=`
+* Removed methods from the invocation list using `-=`
+* Used a nullable delegate because removing handlers can leave the delegate with no methods
+* Used `?.Invoke()` to safely invoke a nullable delegate
 
 I will keep adding programs and small projects as I learn more C# and .NET.
