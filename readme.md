@@ -49,6 +49,23 @@ This repo contains the C# programs and small projects I am making while learning
 * Multiple-parameter lambdas
 * Built-in delegates using `Func<>`
 * Built-in delegates using `Action<>`
+* LINQ fundamentals
+* `Where()` for filtering
+* `Select()` for transforming data
+* LINQ method chaining
+* Deferred execution
+* Immediate execution using `ToList()`
+* `First()` and `FirstOrDefault()`
+* `Single()` and `SingleOrDefault()`
+* `Any()` and `All()`
+* `Count()`, `Sum()`, `Average()`, `Min()` and `Max()`
+* `OrderBy()` and `OrderByDescending()`
+* `ThenBy()` for secondary sorting
+* `GroupBy()` and grouping keys
+* `Join()` for combining related collections
+* Anonymous objects in LINQ results
+* `IEnumerable<T>` vs `IQueryable<T>`
+* Basic use of `AsQueryable()`
 
 ## Practice Programs
 
@@ -203,5 +220,36 @@ Things implemented so far:
 * Replaced a custom delegate with `Func<decimal, decimal>`
 * Used `Action<string>` for a lambda that returns `void`
 * Compared custom delegates with `Func<>` and `Action<>`
+
+### LINQ Demo
+
+Console project made while learning LINQ and how queries work with collections.
+
+Things implemented so far:
+
+* Used `Where()` to filter values from a collection
+* Compared manual `foreach` filtering with LINQ filtering
+* Used `Select()` to transform values
+* Chained `Where()` and `Select()` together
+* Learned that LINQ queries can use deferred execution
+* Tested deferred execution by modifying the original collection before enumeration
+* Used `ToList()` to force immediate execution and create a snapshot
+* Used `First()` and `FirstOrDefault()`
+* Used `Single()` and `SingleOrDefault()`
+* Used `Any()` and `All()` for boolean checks
+* Used `Count()`, `Sum()`, `Average()`, `Min()` and `Max()`
+* Used `OrderBy()` and `OrderByDescending()` for sorting
+* Used `ThenBy()` for secondary sorting
+* Created a `Student` model for object-based LINQ queries
+* Used `GroupBy()` to group students by course
+* Used `group.Key` to access the value used for grouping
+* Used nested iteration to access objects inside LINQ groups
+* Created `CourseInfo` data and joined it with students
+* Used `Join()` with matching course keys from two collections
+* Created anonymous objects containing values from both joined collections
+* Compared `IEnumerable<T>` with `IQueryable<T>`
+* Used `AsQueryable()` to practice working with an `IQueryable<Student>`
+* Learned that the in-memory `AsQueryable()` demo does not involve SQL or a database
+* Learned how `IQueryable<T>` becomes more useful with providers such as EF Core that can translate LINQ expressions into database queries
 
 I will keep adding programs and small projects as I learn more C# and .NET.
