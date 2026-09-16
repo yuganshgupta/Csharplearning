@@ -6,37 +6,12 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        //Console.WriteLine("Hello, World!");
-        DiscountHandler handle = DiscountService.StudentDiscount;
-        decimal amt = DiscountService.CalculateFinalPrice(5000m,handle);
-        Console.WriteLine(amt);
+        Func<decimal, decimal>discalc = amount  => amount - (amount * 0.15m);
+        Console.WriteLine(discalc(5000m));
 
-        handle = DiscountService.FestivalDiscount;
-        amt = DiscountService.CalculateFinalPrice(5000m, handle);
-        Console.WriteLine(amt);
-
-        handle = DiscountService.NoDiscount;
-        amt = DiscountService.CalculateFinalPrice(5000m, handle);
-        Console.WriteLine(amt);
+        Action<string> show = orderid => Console.WriteLine($"Order with the id : {orderid} is now confirmed");
+        show("ORD101");
 
 
-
-        // OrderHandler is nullable because removing methods using -=
-        // can eventually leave the delegate with no methods and make it null
-        OrderHandler? han = OrderNotificationService.ShowConfirmation;
-
-        // += adds more methods to the delegate invocation list
-        // Calling han will run all the methods in the order they were added
-        han += OrderNotificationService.SaveOrderLog;
-        han += OrderNotificationService.SendNotification;
-
-        // ?.Invoke calls the delegate only if it is not null
-        han?.Invoke("Test");
-
-        // -= removes methods from the invocation list
-        han -= OrderNotificationService.SaveOrderLog;
-        han -= OrderNotificationService.SendNotification;
-
-        han?.Invoke("Test");
     }
 }

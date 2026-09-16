@@ -43,6 +43,12 @@ This repo contains the C# programs and small projects I am making while learning
 * Multicast delegates
 * Adding and removing methods using `+=` and `-=`
 * Nullable delegates and `?.Invoke()`
+* Lambda expressions
+* Expression lambdas and block lambdas
+* Lambda parameter type inference
+* Multiple-parameter lambdas
+* Built-in delegates using `Func<>`
+* Built-in delegates using `Action<>`
 
 ## Practice Programs
 
@@ -176,7 +182,7 @@ Things implemented so far:
 
 ### Delegate Order Demo
 
-Console project made while learning delegates and multicast delegates.
+Console project made while learning delegates, lambdas and built-in delegate types.
 
 Things implemented so far:
 
@@ -190,5 +196,12 @@ Things implemented so far:
 * Removed methods from the invocation list using `-=`
 * Used a nullable delegate because removing handlers can leave the delegate with no methods
 * Used `?.Invoke()` to safely invoke a nullable delegate
+* Preserved the original named-method delegate demo in a separate file
+* Used lambdas with the custom `DiscountHandler` delegate
+* Practiced both block lambdas and expression lambdas
+* Used multiple lambda parameters
+* Replaced a custom delegate with `Func<decimal, decimal>`
+* Used `Action<string>` for a lambda that returns `void`
+* Compared custom delegates with `Func<>` and `Action<>`
 
 I will keep adding programs and small projects as I learn more C# and .NET.
