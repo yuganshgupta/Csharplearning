@@ -183,7 +183,7 @@ Things implemented so far:
 
 ### Newtonsoft JSON Demo
 
-Console project made while learning JSON serialization and deserialization using Newtonsoft.Json.
+Console project made while learning JSON serialization, deserialization and dynamic JSON navigation using Newtonsoft.Json.
 
 Things implemented so far:
 
@@ -196,6 +196,21 @@ Things implemented so far:
 * Used `Path.Combine()` to create file paths
 * Used `File.WriteAllText()` to save JSON data
 * Used `File.ReadAllText()` to read JSON data back from a file
+* Used `JToken.Parse()` to parse JSON into a navigable JSON tree
+* Learned how `JToken`, `JObject`, `JArray` and `JValue` are related
+* Used `JObject` for JSON objects and `JArray` for JSON arrays
+* Learned that primitive JSON values are represented using `JValue`
+* Navigated nested JSON properties using token indexers
+* Extracted the `student` object from the root JSON token
+* Extracted the `subjects` array from the root JSON token
+* Iterated through items inside a `JArray`
+* Used pattern matching with `is JArray` and `is JObject`
+* Compared direct casting, the `as` operator and `is` pattern matching
+* Used `Value<string>()` and `Value<int>()` to convert JSON tokens into normal C# values
+* Created a `StudentInfo` class matching part of the JSON structure
+* Used `ToObject<StudentInfo>()` to convert a selected JSON section into a strongly typed C# object
+* Compared dynamic JSON navigation with strongly typed deserialization
+* Separated the basic JSON demo and the `JToken` demo into different files to keep the project easier to understand
 
 ### Delegate Order Demo
 

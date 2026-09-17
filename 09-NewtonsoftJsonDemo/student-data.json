@@ -1,0 +1,16 @@
+{
+  "student": {
+    "name": "Yugansh",
+    "marks": 78
+  },
+  "subjects": [
+    {
+      "name": "C#",
+      "score": 85
+    },
+    {
+      "name": "SQL",
+      "score": 90
+    }
+  ]
+}
