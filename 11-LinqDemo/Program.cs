@@ -14,5 +14,8 @@ internal class Program
 
         Console.WriteLine("\n--- IQueryable demo without EF Core ---");
         QueryableDemo.Run();
+
+        Console.WriteLine("LINQ query syntax");
+        QuerySyntaxDemo.Run();
     }
 }

@@ -251,5 +251,6 @@ Things implemented so far:
 * Used `AsQueryable()` to practice working with an `IQueryable<Student>`
 * Learned that the in-memory `AsQueryable()` demo does not involve SQL or a database
 * Learned how `IQueryable<T>` becomes more useful with providers such as EF Core that can translate LINQ expressions into database queries
+* LINQ query syntax using `from`, `where`, `orderby` and `select`
 
 I will keep adding programs and small projects as I learn more C# and .NET.
