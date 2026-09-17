@@ -66,6 +66,10 @@ This repo contains the C# programs and small projects I am making while learning
 * Anonymous objects in LINQ results
 * `IEnumerable<T>` vs `IQueryable<T>`
 * Basic use of `AsQueryable()`
+* `launchSettings.json`
+* Launch profiles in Visual Studio
+* Environment variables from launch profiles
+* Difference between `launchSettings.json` and `appsettings.json`
 
 ## Practice Programs
 
@@ -267,5 +271,20 @@ Things implemented so far:
 * Learned that the in-memory `AsQueryable()` demo does not involve SQL or a database
 * Learned how `IQueryable<T>` becomes more useful with providers such as EF Core that can translate LINQ expressions into database queries
 * LINQ query syntax using `from`, `where`, `orderby` and `select`
+
+### Launch Settings Demo
+
+Small console project made while learning how `launchSettings.json` works in .NET development.
+
+Things implemented so far:
+
+* Created `Properties/launchSettings.json`
+* Created separate `Development` and `Testing` launch profiles
+* Used `commandName: "Project"`
+* Added profile-specific environment variables
+* Used `Environment.GetEnvironmentVariable()` inside the application
+* Switched launch profiles in Visual Studio and observed different runtime values
+* Learned that Visual Studio or `dotnet run` reads `launchSettings.json` before starting the application
+* Learned that `launchSettings.json` controls development launch behavior, while `appsettings.json` is used for application configuration
 
 I will keep adding programs and small projects as I learn more C# and .NET.

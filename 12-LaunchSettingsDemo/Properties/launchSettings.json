@@ -1,0 +1,23 @@
+{
+  "profiles": {
+    "Development": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "APP_MODE": "Development"
+      }
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "environmentVariables": {
+        "APP_MODE": "Development"
+      },
+      "distributionName": ""
+    },
+    "Testing": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "APP_MODE": "Testing"
+      }
+    }
+  }
+}
