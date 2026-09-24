@@ -18,10 +18,11 @@ internal class Program
         //    Thread.Sleep(10);
         //}
 
-       
-        
-         RaceConditionDemo.Run();
-        
+
+
+        //RaceConditionDemo.Run();
+        //DeadlockDemo.Run();   
+        ThreadLifecycleDemo.Run();
 
 
 
