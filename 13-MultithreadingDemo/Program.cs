@@ -29,7 +29,8 @@ internal class Program
         //SemaphoreDemo.Run();
         //ConcurrentCollectionsDemo.Run();
         //ParallelDemo.Run();
-        PlinqDemo.Run();
+        //PlinqDemo.Run();
+        TaskDemo.Run();
 
 
 
