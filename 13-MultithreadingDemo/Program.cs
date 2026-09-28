@@ -26,7 +26,8 @@ internal class Program
 
         //ThreadPoolDemo.Run();
         //Thread.Sleep(1000);
-        SemaphoreDemo.Run();
+        //SemaphoreDemo.Run();
+        ConcurrentCollectionsDemo.Run();
 
 
 
