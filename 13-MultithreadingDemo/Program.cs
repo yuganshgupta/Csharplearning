@@ -28,7 +28,8 @@ internal class Program
         //Thread.Sleep(1000);
         //SemaphoreDemo.Run();
         //ConcurrentCollectionsDemo.Run();
-        ParallelDemo.Run();
+        //ParallelDemo.Run();
+        PlinqDemo.Run();
 
 
 
