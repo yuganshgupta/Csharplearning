@@ -22,7 +22,11 @@ internal class Program
 
         //RaceConditionDemo.Run();
         //DeadlockDemo.Run();   
-        ThreadLifecycleDemo.Run();
+        //ThreadLifecycleDemo.Run();
+
+        //ThreadPoolDemo.Run();
+        //Thread.Sleep(1000);
+        SemaphoreDemo.Run();
 
 
 
